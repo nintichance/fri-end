@@ -1,7 +1,7 @@
-/* * {
+* {
   color: #010100;
   border: 1px solid pink;
-} */
+}
 body {
   display: flex;
   flex-direction: column;
@@ -9,7 +9,6 @@ body {
   align-items: center;
   background-color: ghostwhite;
   margin: 0;
-  height: 100vh;
   width: 100vw;
   font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -75,7 +74,23 @@ font-size: 1em;
 .usersDisplay {
   width: 100%;
   display: grid;
-  justify-content: center;
+  margin: 10px;
+}
+.usersPageNavigation{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media only screen and (min-width: 954px){
+  .usersDisplay {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 10px;
+  }
 }
 
 @media only screen and (min-width: 643px) {
@@ -98,4 +113,6 @@ font-size: 1em;
   .newUser {
     margin-right: 20px;
   }
+ 
+  
   }

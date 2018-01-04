@@ -1,13 +1,17 @@
-<div class="usersDisplay">
-    <div>users</div>
-    {{#each users}}
+<div class="usersIndex">
     <div>
-        <img src="{{this.img}}" alt="Picture of {{this.name}}">
-        <h3>{{this.description}}</h3>
-        <a href="/users/{{this._id}}">{{username}}'s account</a>
-    </div>
-    {{/each}}
-    <div>
-        <a href="/users/new">new user</a>
+        <div class="usersPageNavigation">
+            <h1>users</h1>
+            <a href="/users/new">new user</a>
+        </div>
+        <div class="usersDisplay">
+            {{#each users}}
+            <div>
+                <img src="{{this.img}}" alt="Picture of {{this.name}}">
+                <p>{{this.description}}</p>
+                <a href="/users/{{this._id}}">{{username}}'s account</a>
+            </div>
+            {{/each}}
+        </div>
     </div>
 </div>
