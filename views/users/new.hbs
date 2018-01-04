@@ -1,0 +1,39 @@
+<div class="newUserPage">
+    <div class="newUserNav">
+        <a href="/">Home</a>
+    </div>
+    <div class="newUserFormBody">
+        <div class="newUser">
+            <h2>Create a New User!</h2>
+            <img class="defaultImg" src="../images/default.gif" alt="Alternating colors">
+        </div>
+        <div class="form">
+            <form action="/users" method="POST">
+                <div class="form-input">
+                    <label for="name">name</label>
+                    <input type="text" name="name" required/>
+                </div>
+
+                <div class="form-input">
+                    <label for="username">Email</label>
+                    <input type="text" name="username" required unique/>
+                </div>
+
+                <div class="form-input">
+                    <label for="img">user image url</label>
+                    <input type="text" name="img" />
+                </div>
+
+                <div class="form-input">
+                    <label for="description">bio</label>
+                    <input type="text" name="description" />
+                </div>
+
+                <div class="button-container flex-end">
+                    <input class="button primary" type="submit" value="Create User">
+                    <a href="/users" class="button warning">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

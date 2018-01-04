@@ -52,15 +52,15 @@ const UserSchema = new Schema(
         },
         username: {
             type: String,
-            required: true
+            required: true,
+            unique: true
         },
         img: {
             type: String,
             default: '/Users/nintichance/ga_wdi/projects/fri-end/public/images/placeholder.jpg'
         },
         description: {
-            type: String,
-            required: true
+            type: String
         },
         connections: [ConnectionSchema]
     },

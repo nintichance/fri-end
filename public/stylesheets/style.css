@@ -24,6 +24,17 @@ a {
   color: #010100;
   text-decoration: none;
 }
+.newUserPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.defaultImg{
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+
 
 @media only screen and (min-width: 643px) {
   *{
@@ -57,5 +68,17 @@ a {
     text-decoration: none;
   }
   
+  .newUserPage {
+    display: flex;
+    flex-direction: column;
+  }
+  .newUserFormBody{
+    display: flex;
+  }
+  .defaultImg{
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+  }
 
 }

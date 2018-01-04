@@ -31,18 +31,18 @@ const peri = new User ({
     name: 'Peridot',
     username: 'trust_no_clods',
     img: 'http://i0.kymcdn.com/photos/images/original/001/088/980/3ed.gif',
-    description: 'I may be little, but I know how to use a weapon!',
+    description: 'An alien who decided to stay',
     connections: [{ 
-        connection: 'partner',
+        connection: 'neighbor',
         endedWell: false,
         over: false,
         effects: [{ 
-            description: 'Pumpkin. Lapis and I are raising him together',
-            available: false,
+            description: 'I received an odd earthling music playing machine. Its useless. Who wants it?!',
+            available: true,
             destroyed: false,
             want: true,
-            img: 'http://vignette2.wikia.nocookie.net/steven-universe/images/4/46/Pumpkin_Dog_by_Lapis_Bob.png/revision/latest?cb=20161010175633',
-            dontWant: false}]
+            img: 'images/ipod.gif',
+            dontWant: true}]
     }]
 })
 
