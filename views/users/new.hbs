@@ -1,37 +1,40 @@
 <div class="newUserPage">
-    <div class="newUserNav">
-        <a href="/">Home</a>
-    </div>
     <div class="newUserFormBody">
         <div class="newUser">
-            <h2>Create a New User!</h2>
+            <h2>create a new user!</h2>
             <img class="defaultImg" src="../images/default.gif" alt="Alternating colors">
         </div>
         <div class="form">
+            <div class="userInfo">
+                <h2>user info</h2>
+            </div>
             <form action="/users" method="POST">
                 <div class="form-input">
-                    <label for="name">name</label>
+                    <label for="name">name:</label>
                     <input type="text" name="name" required/>
                 </div>
 
                 <div class="form-input">
-                    <label for="username">Email</label>
+                    <label for="username">username:</label>
                     <input type="text" name="username" required unique/>
                 </div>
 
                 <div class="form-input">
-                    <label for="img">user image url</label>
+                    <label for="img">user image url:</label>
                     <input type="text" name="img" />
                 </div>
 
                 <div class="form-input">
-                    <label for="description">bio</label>
+                    <label for="description">bio:</label>
                     <input type="text" name="description" />
                 </div>
 
-                <div class="button-container flex-end">
+                <div class="bottom-buttons">
                     <input class="button primary" type="submit" value="Create User">
-                    <a href="/users" class="button warning">Cancel</a>
+                    <a href="/users" class="button warning">cancel</a>
+
+                    <a href="/users">home</a>
+
                 </div>
             </form>
         </div>
