@@ -11,7 +11,7 @@ mongoose.Promise = global.Promise
 const steven = new User ({
     name: 'Steven',
     username: 'stewball',
-    img: 'https://vignette.wikia.nocookie.net/gemcrust/images/c/c2/Steven_Universe__With_Weapon3.png/revision/latest?cb=20160911190428',
+    img: '../images/placeholder.jpg',
     description: 'I am the only human crystal gem and Im ready to save my planet!',
     connections: [{ 
         connection: 'mom',
@@ -30,7 +30,7 @@ const steven = new User ({
 const peri = new User ({
     name: 'Peridot',
     username: 'trust_no_clods',
-    img: 'http://i0.kymcdn.com/photos/images/original/001/088/980/3ed.gif',
+    img: '../images/placeholder.jpg',
     description: 'An alien who decided to stay',
     connections: [{ 
         connection: 'neighbor',
@@ -49,7 +49,7 @@ const peri = new User ({
 const onion = new User ({
     name: 'Onion',
     username: 'oniondestroys',
-    img: 'http://vignette1.wikia.nocookie.net/stevenuniverse/images/8/89/Hes_Onion.png/revision/latest?cb=20160714080818',
+    img: '../images/placeholder.jpg',
     description: 'Silent. But deadly.',
     connections: [{ 
         connection: 'associate',

@@ -1,3 +1,13 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<img src="images/ipod.gif" alt="iPod gif">
+<div class="usersDisplay">
+    <div>users</div>
+    {{#each users}}
+    <div>
+        <img src="{{this.img}}" alt="Picture of {{this.name}}">
+        <h3>{{this.description}}</h3>
+        <a href="/users/{{this._id}}">{{username}}'s account</a>
+    </div>
+    {{/each}}
+    <div>
+        <a href="/users/new">new user</a>
+    </div>
+</div>

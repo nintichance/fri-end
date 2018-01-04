@@ -1,0 +1,14 @@
+@media only screen and (min-width: 643px) {
+.home {
+      font-size: 4em;
+}
+.newUserFormBody{
+      justify-content: space-between;
+}
+.form {
+    margin-left: 20px;
+}
+.newUser {
+    margin-right: 20px;
+}
+}
