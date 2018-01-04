@@ -39,8 +39,19 @@ router.post('/', (req, res) => {
   .catch((err)=>{
     console.log(err) 
   })
+})
 
-
+router.get('/:userId', (req, res)=>{
+  const userId = req.params.userId
+  User.findById(userId)
+    .then((user)=>{
+      res.render('users/show', {
+        user
+      })
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
 })
 
 module.exports = router
