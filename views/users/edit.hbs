@@ -11,26 +11,26 @@
             <form action="/users" method="POST">
                 <div class="form-input">
                     <label for="name">name:</label>
-                    <input type="text" name="name" required/>
+                    <input type="text" name="name" value={{user.name}}>
                 </div>
 
                 <div class="form-input">
                     <label for="username">username:</label>
-                    <input type="text" name="username" required unique/>
+                    <input type="text" name="username" value={{user.username}}>
                 </div>
 
                 <div class="form-input">
                     <label for="img">user image url:</label>
-                    <input type="text" name="img" default/>
+                    <input type="text" name="img" value={{user.img}}>
                 </div>
 
                 <div class="form-input">
                     <label for="description">bio:</label>
-                    <input type="text" name="description" />
+                    <input type="text" name="description" value={{user.description}}>
                 </div>
 
                 <div class="bottom-buttons">
-                    <input class="button primary" type="submit" value="create user">
+                    <input class="button primary" type="submit" value="update user">
                     <a href="/users" class="button warning">cancel</a>
 
                     <a href="/users">home</a>

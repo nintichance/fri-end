@@ -64,4 +64,21 @@ router.get('/:userId/delete', (req, res)=>{
       console.log(err)
     })
 })
+
+router.get('/:userId/edit', (req, res)=>{
+  const userId = req.params.userId
+  res.render('users/edit')
+})
+
+// router.post('/:userId/edit', (req, res)=>{
+//   const userId = req.params.userId
+//   const updatedUser = req.body
+//   User.findByIdAndUpdate(userId, updatedUser)
+//     .then(()=>{
+//       res.redirect('/users')
+//     })
+//     .catch((err)=>{
+//       console.log(err)
+//     })
+// })
 module.exports = router
