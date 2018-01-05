@@ -1,16 +1,10 @@
 <div class="usersIndex effectsIndex">
     <div>
-        <div class="usersNav">
-            <h1>users</h1>
-            <a href="/users/new">new user</a>
-            <a href="/users">other users</a>
-            <a href="/">home</a>
-        </div>
         <div class="usersDisplay">
             {{#each effects}}
             <div>
                 <div class="effectImg">
-                    <img src="{{../img}}" alt="Picture of Effect">
+                    <img src="{{this.img}}" alt="Picture of Effect">
                 </div>
                 <div class="effectDescription">
                     <p>{{this.description}}</p>
@@ -24,7 +18,7 @@
                 <div class="effectLinks">
                     <a href="/users/{{this._id}}">{{../username}}'s account</a>
                     <a href="/users/{{../userId}}/effects/{{this._id}}/connections">{{username}}'s account</a>
-                    <a href="/user/{{../userId}}/effects/new">new effect</a>
+                    <a href="/users/{{../userId}}/effects/new">new effect</a>
                 </div>
             </div>
             {{/each}}

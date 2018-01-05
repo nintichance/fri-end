@@ -1,7 +1,7 @@
-/* * {
+* {
   color: #010100;
   border: 1px solid pink;
-} */
+}
 body {
   display: flex;
   flex-direction: column;
@@ -100,9 +100,18 @@ font-size: 1em;
   height: 80vh;
 }
 header, footer {
-  
+  background-color: black;
+  color: white;
   height: 10vh;
   width: 100vw;
+}
+
+header > h1 {
+  color: white;
+}
+
+.navigation > a {
+  color: white;
 }
 /* .personPage{
   width: 100vw;
