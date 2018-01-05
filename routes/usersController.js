@@ -67,10 +67,15 @@ router.get('/:userId/delete', (req, res)=>{
 
 router.get('/:userId/edit', (req, res)=>{
   const userId = req.params.userId
-  res.render('users/edit')
+  User.findById(userId)
+  .then((user)=>{
+    res.render('users/edit', {
+      user
+    })
+  })
 })
 
-// router.post('/:userId/edit', (req, res)=>{
+// router.put('/:userId/edit', (req, res)=>{
 //   const userId = req.params.userId
 //   const updatedUser = req.body
 //   User.findByIdAndUpdate(userId, updatedUser)
@@ -81,4 +86,5 @@ router.get('/:userId/edit', (req, res)=>{
 //       console.log(err)
 //     })
 // })
+
 module.exports = router
