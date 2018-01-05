@@ -11,6 +11,7 @@ router.get('/', (req, res)=>{
                 userId,
                 effects: user.effects,
                 username: user.username,
+                img: user.effects.img,
                 title: 'effects'
             })
         })
