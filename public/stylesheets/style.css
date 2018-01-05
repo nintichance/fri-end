@@ -1,12 +1,7 @@
-* {
-  color: #010100;
-  border: 1px solid pink;
-}
+
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: ghostwhite;
   margin: 0;
   width: 100vw;
@@ -15,8 +10,6 @@ body {
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: 2em;
   width: 100%;
 }
@@ -28,6 +21,8 @@ a {
 .newUserPage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .defaultImg{
@@ -81,6 +76,13 @@ font-size: 1em;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+header, footer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(203, 203, 247, 0.1)
 }
 /* .personPage{
   width: 100vw;

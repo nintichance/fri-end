@@ -75,16 +75,16 @@ router.get('/:userId/edit', (req, res)=>{
   })
 })
 
-// router.put('/:userId/edit', (req, res)=>{
-//   const userId = req.params.userId
-//   const updatedUser = req.body
-//   User.findByIdAndUpdate(userId, updatedUser)
-//     .then(()=>{
-//       res.redirect('/users')
-//     })
-//     .catch((err)=>{
-//       console.log(err)
-//     })
-// })
+router.put('/:userId', (req, res)=>{
+  const userId = req.params.userId
+  const updatedUser = req.body
+  User.findByIdAndUpdate(userId, updatedUser)
+    .then(()=>{
+      res.redirect(`/users/${userId}`)
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+})
 
 module.exports = router
