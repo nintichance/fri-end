@@ -10,10 +10,10 @@
         <div class="personInfo">
             <img src="{{img}}" alt="Picture of {{user.name}}">
             <p>{{user.description}}</p>
-            <a class="delete" href="/users/{{user._id}}/delete">delete user</a>
-            <a class="update" href="/users/{{user._id}}/edit">edit user</a>
-            <a href="/users/{{user.id}}/effects">view effects</a>
-           
+            <a class="delete" href="/users/{{../userId}}/delete">delete user</a>
+            <a class="update" href="/users/{{../userId}}/edit">edit user</a>
+            <a href="/users/{{../userId}}/effects/{{this._id}}">view effect</a>
+           <a href="/users/{{../userId}}/effects/delete">delete effect</a>
         </div>
     </div>
 </div>

@@ -28,6 +28,26 @@ router.get('/new', (req, res)=>{
     })
 })
 
+router.get('/:effectId', (req, res) => {
+    const userId = req.params.userId
+    const effectId = req.params.effectId
+  
+    User.findById(userId)
+      .then((user) => {
+        const effect = user.effects.id(effectId)
+        res.render('effects/show', {
+          userId,
+          effect,
+          pageTitle: 'effects'
+        })
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  })
+
+
+
 // router.post('/', (req, res)=>{
 //     const userId = req.params.userId
 //     const newEffect = req.body

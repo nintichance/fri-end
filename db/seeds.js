@@ -62,7 +62,7 @@ User.remove({}).then(() => {
             available: true,
             destroyed: false,
             want: true,
-            img: 'images/ipod.gif',
+            img: '../../images/ipod.gif',
             dontWant: true
   })
       const neighbor = new Connection ({
@@ -80,7 +80,7 @@ User.remove({}).then(() => {
   return User.create({
     name: 'Onion',
     username: 'oniondestroys',
-    img: '../images/placeholder.jpg',
+    img: '../../images/placeholder.jpg',
     description: 'Silent. But deadly.'
 })
 })
