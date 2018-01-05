@@ -21,26 +21,26 @@
 
                 <div class="form-input">
                     <label for="destroyed">destroyed:</label>
-                    <input type="text" name="img" default/>
+                    <input type="text" name="destroyed" required/>
                 </div>
 
                 <div class="form-input">
                     <label for="img">effect image url:</label>
-                    <input type="text" name="description" />
+                    <input type="text" name="img" default/>
                 </div>
 
                 <div class="form-input">
                     <label for="want">do you want it:</label>
-                    <input type="text" name="description" />
+                    <input type="text" name="want"/>
                 </div>
 
                 <div class="form-input">
                     <label for="dontWant">do you not want it?:</label>
-                    <input type="text" name="description" />
+                    <input type="text" name="dontWant"/>
                 </div>
 
                 <div class="bottom-buttons">
-                    <input class="button primary" type="submit" value="create user">
+                    <input class="button primary" type="submit" value="create effect">
                     <a href="/users/{{userId}}" class="button warning">cancel</a>
 
                     <a href="/users/{{userId}}">go back</a>

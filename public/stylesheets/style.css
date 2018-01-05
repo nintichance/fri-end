@@ -12,6 +12,13 @@ body {
   width: 100vw;
   font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+h1{
+  margin: 0;
+}
+header{
+  display: flex;
+  flex-direction: column;
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -28,6 +35,9 @@ a {
 .newUserPage {
   display: flex;
   flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .defaultImg{
@@ -71,6 +81,10 @@ font-size: 1em;
   justify-content: space-between;
   width: 100%;
 }
+.usersIndex {
+  width: 100vw;
+
+}
 .usersDisplay {
   width: 100%;
   display: grid;
@@ -81,6 +95,14 @@ font-size: 1em;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+.home {
+  height: 80vh;
+}
+header, footer {
+  
+  height: 10vh;
+  width: 100vw;
 }
 /* .personPage{
   width: 100vw;
@@ -96,8 +118,24 @@ font-size: 1em;
   justify-content: center;
   align-items: center;
 } */
+img {
+  width: 95%;
+  height: 80%;
+}
 
 @media only screen and (min-width: 643px) {
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navigation {
+    display: flex;
+    align-items: flex-end;
+  }
+  h1 {
+    display:flex;
+    align-items: flex-end;
+  }
   .home {
     font-size: 4em;
   }

@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
   .then((users)=>{
     res.render('users/index', {
       users,
-      title: 'dot.end users'
+      title: 'users'
     })
   })
   .catch((err)=>{
