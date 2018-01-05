@@ -3,6 +3,22 @@ const Schema = mongoose.Schema
 
 mongoose.Promise = global.Promise
 
+const ConnectionSchema = new Schema({
+    connection: {
+        type: String
+    },
+    endedWell: {
+        type: Boolean
+    },
+    over: {
+        type: Boolean
+    }
+},
+{
+    timestamps: {},
+    usePushEach: true
+})
+
 const EffectSchema = new Schema({
     description: {
         type: String
@@ -24,25 +40,8 @@ const EffectSchema = new Schema({
     },
     dontWant: {
         type: String
-    }
-})
-
-const ConnectionSchema = new Schema({
-    connection: {
-        type: String
     },
-    endedWell: {
-        type: Boolean
-    },
-    over: {
-        type: Boolean
-    },
-    effects: [EffectSchema]
-
-},
-{
-    timestamps: {},
-    usePushEach: true
+    connections: [ConnectionSchema]
 })
 
 const UserSchema = new Schema(
@@ -62,7 +61,7 @@ const UserSchema = new Schema(
         description: {
             type: String
         },
-        connections: [ConnectionSchema]
+        effects: [EffectSchema]
     },
     {
         timestamps: {},

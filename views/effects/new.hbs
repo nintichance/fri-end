@@ -1,0 +1,52 @@
+<div class="newUserPage">
+    <div class="newUserFormBody">
+        <div class="newUser">
+            <h2>create a new effect!</h2>
+            <img class="defaultImg" src="../images/default.gif" alt="Alternating colors">
+        </div>
+        <div class="form">
+            <div class="userInfo">
+                <h2> enter new effect:</h2>
+            </div>
+            <form action="/users/{{userId}}/effects" method="POST">
+                <div class="form-input">
+                    <label for="description">description:</label>
+                    <input type="text" name="description" required/>
+                </div>
+
+                <div class="form-input">
+                    <label for="available">available:</label>
+                    <input type="text" name="available" required unique/>
+                </div>
+
+                <div class="form-input">
+                    <label for="destroyed">destroyed:</label>
+                    <input type="text" name="img" default/>
+                </div>
+
+                <div class="form-input">
+                    <label for="img">effect image url:</label>
+                    <input type="text" name="description" />
+                </div>
+
+                <div class="form-input">
+                    <label for="want">do you want it:</label>
+                    <input type="text" name="description" />
+                </div>
+
+                <div class="form-input">
+                    <label for="dontWant">do you not want it?:</label>
+                    <input type="text" name="description" />
+                </div>
+
+                <div class="bottom-buttons">
+                    <input class="button primary" type="submit" value="create user">
+                    <a href="/users/{{userId}}" class="button warning">cancel</a>
+
+                    <a href="/users/{{userId}}">go back</a>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

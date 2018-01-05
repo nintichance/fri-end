@@ -27,8 +27,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 const usersController = require('./routes/usersController')
 app.use('/users', usersController)
 
-// const storesController = require('./controllers/storesController')
-// app.use('/users/:userId/stores', storesController)
+const effectsController = require('./routes/effectsController')
+app.use('/users/:userId/effects', effectsController)
 
 // const giftsController = require('./controllers/giftsController')
 // app.use('/users/:userId/stores/:storeId/gifts', giftsController )
