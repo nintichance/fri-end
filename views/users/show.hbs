@@ -1,10 +1,14 @@
-<div class="showHeader">
-    <h2>{{user.name}}'s page</h2>
-</div>
-<div>
-    <img src="{{user.img}}" alt="Picture of {{user.name}}">
-    <a class="delete" href="/users/{{user._id}}/delete">Delete User</a>
-    <a class="update" href="/users/{{user._id}}/edit">Edit User</a>
-    <a class="goHome" href="/users">Go Home</a>
-    <a class="stores"  href="/users/{{user._id}}/connections">connections</a>
+<div class="personPage">
+    <div class="personHeader">
+            <h2>{{user.name}}'s page</h2>
+        </div>
+    <div class="personBody">
+        <div class="personInfo">
+            <img src="{{user.img}}" alt="Picture of {{user.name}}">
+            <a class="delete" href="/users/{{user._id}}/delete">Delete User</a>
+            <a class="update" href="/users/{{user._id}}/edit">Edit User</a>
+            <a class="goHome" href="/users">Go Home</a>
+            <a class="stores" href="/users/{{user._id}}/connections">connections</a>
+        </div>
+    </div>
 </div>

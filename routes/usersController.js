@@ -54,4 +54,14 @@ router.get('/:userId', (req, res)=>{
     })
 })
 
+router.get('/:userId/delete', (req, res)=>{
+  const userId = req.params.userId
+  User.findByIdAndRemove(userId)
+    .then(()=>{
+      res.redirect('/users')
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+})
 module.exports = router

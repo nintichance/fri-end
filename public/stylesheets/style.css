@@ -82,16 +82,20 @@ font-size: 1em;
   justify-content: space-between;
   align-items: flex-end;
 }
-
-@media only screen and (min-width: 954px){
-  .usersDisplay {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin: 10px;
-  }
+/* .personPage{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+.personBody{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 
 @media only screen and (min-width: 643px) {
   .home {
@@ -113,6 +117,8 @@ font-size: 1em;
   .newUser {
     margin-right: 20px;
   }
- 
-  
+ .usersDisplay {
+   grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: repeat(3, 1fr)
+ }
   }
