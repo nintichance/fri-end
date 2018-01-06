@@ -41,6 +41,28 @@ router.get('/new', (req, res) => {
       })
   })
   
+  router.get('/', (request, response) => {
+    const userId = request.params.userId
+    const effectId = request.params.effectId
+    const connectionId = request.params.connectionId
+  
+    User.findById(userId)
+      .then((user) => {
+        const effect = user.effects.id(effectId)
+        const connection = effect.connections.id(connectionId)
+  
+        response.render('connections/show', {
+          userId,
+          username: user.username,
+          effect,
+          connection,
+          pageTitle: 'connections'
+        })
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  })
 
 
 module.exports = router;

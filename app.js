@@ -31,7 +31,7 @@ const effectsController = require('./routes/effectsController')
 app.use('/users/:userId/effects', effectsController)
 
 const connectionsController = require('./routes/connectionsController')
-app.use('/users/:userId/effects/:storeId/connections', connectionsController )
+app.use('/users/:userId/effects/:effectId/connections', connectionsController )
 
 const indexController = require('./routes/indexController')
 app.use('/', indexController )
