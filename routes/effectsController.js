@@ -35,12 +35,11 @@ router.get('/:effectId', (req, res) => {
     User.findById(userId)
       .then((user) => {
         const effect = user.effects.id(effectId)
+        console.log(`EFFECT${effect}`)
+        console.log(`USER EFFECTS ${user.effects}`)
         res.render('effects/show', {
           userId,
           effect,
-          effectId: user.effects._id,
-          img: 'https://imgur.com/QKCVUFz',
-          description: user.effects.description,
           username: user.username,
           pageTitle: 'effects'
         })
@@ -83,7 +82,6 @@ router.get('/:effectId', (req, res) => {
                 console.log(err)
             })
   })
-
 
 
 module.exports = router
