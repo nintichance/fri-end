@@ -40,7 +40,7 @@ User.remove({}).then(() => {
     dontWant: false
   })
   const mom = new Connection({
-    connection: 'mom',
+        connection: 'mom',
         endedWell: true,
         over: false
   })

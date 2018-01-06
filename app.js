@@ -30,8 +30,8 @@ app.use('/users', usersController)
 const effectsController = require('./routes/effectsController')
 app.use('/users/:userId/effects', effectsController)
 
-// const giftsController = require('./controllers/giftsController')
-// app.use('/users/:userId/stores/:storeId/gifts', giftsController )
+const connectionsController = require('./routes/connectionsController')
+app.use('/users/:userId/effects/:storeId/connections', connectionsController )
 
 const indexController = require('./routes/indexController')
 app.use('/', indexController )
