@@ -1,19 +1,17 @@
 <div class="personPage">
     <div class="personHeader">
-            <h2>{{user.name}}'s page</h2>
+            <h2>{{username}}'s effect</h2>
             <a href="/users">other users</a>
-            <a class="stores" href="/users/{{user._id}}/effects/new">new effect</a>
-            <a href="/users/{{user._id}}/effects">{{user.username}}'s effects</a>
-            <a class="connections" href="/users/{{user._id}}/effects/{{effect._id}}/connections">{{user.username}}'s connections</a>
+            <a class="stores" href="/users/{{userId}}/effects/new">new effect</a>
+            <a href="/users/{{userId}}/effects">{{username}}'s effects</a>
+            <a class="connections" href="/users/{{userId}}/effects/{{effect_id}}/connections">{{username}}'s connections</a>
         </div>
     <div class="personBody">
         <div class="personInfo">
-            <img src="{{img}}" alt="Picture of {{user.name}}">
-            <p>{{user.description}}</p>
-            <a class="delete" href="/users/{{../userId}}/delete">delete user</a>
-            <a class="update" href="/users/{{../userId}}/edit">edit user</a>
-            <a href="/users/{{../userId}}/effects/{{this._id}}">view effect</a>
-           <a href="/users/{{../userId}}/effects/delete">delete effect</a>
+            <img src="{{img}}" alt="Picture of {{username}}">
+            <p>{{description}}</p>
+            <a href="/users/{{userId}}/effects">back to effects</a>
+           <a href="/users/{{userId}}/effects/{{effect._id}}/delete">delete effect</a>
         </div>
     </div>
 </div>

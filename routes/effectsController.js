@@ -38,6 +38,10 @@ router.get('/:effectId', (req, res) => {
         res.render('effects/show', {
           userId,
           effect,
+          effectId: user.effects._id,
+          img: 'https://imgur.com/QKCVUFz',
+          description: user.effects.description,
+          username: user.username,
           pageTitle: 'effects'
         })
       })
@@ -46,24 +50,40 @@ router.get('/:effectId', (req, res) => {
       })
   })
 
+  router.post('/', (req, res)=>{
+    const userId = req.params.userId
+    const newEffect = req.body
+    console.log(userId)
+    User.findById(userId)
+        .then((user)=>{
+            user.effects.push(newEffect)
+            return user.save()
+        })
+        .then(()=>{
+            res.redirect(`/users/${userId}/effects`)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+})
 
+  router.get('/:effectId/delete', (req, res)=>{
+    const userId = req.params.userId
+    const effectId = req.params.effectId
+    console.log(userId)
+        User.findById(userId)
+            .then((user)=>{
+                user.effects.id(effectId).remove()
+                return user.save()
+            })
+            .then(()=>{
+                res.redirect(`/users/${userId}/effects`)
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+  })
 
-// router.post('/', (req, res)=>{
-//     const userId = req.params.userId
-//     const newEffect = req.body
-
-//     User.findById(userId)
-//         .then((user)=>{
-//             user.effects.push(newEffect)
-//             return user.save()
-//         })
-//         .then(()=>{
-//             res.redirect(`users/${userId}/effects`)
-//         })
-//         .catch((err)=>{
-//             console.log(err)
-//         })
-// })
 
 
 module.exports = router
