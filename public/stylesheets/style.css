@@ -170,16 +170,19 @@ border-radius: 4px;
   width: 100vw;
   margin-top: 100px;
   margin-left: 5px;
+  display: flex;
 }
 
 .usersDisplay {
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin-left: 5px;
   margin-bottom: 100px;
 }
 .usersPageNavigation {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   margin-left: 5px;
@@ -222,6 +225,7 @@ img {
     margin-right: 20px;
   }
   .usersDisplay {
+    display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr)
   }
