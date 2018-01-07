@@ -31,7 +31,7 @@ a {
 .newUserPage {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 76vh;
   justify-content: center;
   align-items: center;
 }
@@ -45,6 +45,7 @@ a {
   display: flex; 
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
 }
 form {
   height: 100%;
@@ -92,13 +93,16 @@ font-size: 1em;
   justify-content: space-between;
   align-items: flex-end;
 }
+.newUserFormBody{
+  height: 76vh;
+}
 .home {
-  height: 80vh;
+  height: 76vh;
 }
 header, footer {
   background-color: black;
   color: white;
-  height: 10vh;
+  height: 12vh;
   width: 100vw;
 }
 
@@ -109,14 +113,17 @@ header > h1 {
 .navigation > a {
   color: white;
 }
-
-/* .personPage{
+.homeBody > div {
+  display: flex;
+  justify-content: center;
+}
+.personPage{
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
 }
-.personBody{
+/* .personBody{
   width:100vw;
   height: 100vh;
   display: flex;
@@ -165,4 +172,16 @@ img {
    grid-template-rows: repeat(3, 1fr);
    grid-template-columns: repeat(3, 1fr)
  }
+ header, footer {
+  height: 10vh;
+}
+.personPage{
+  height: 80vh;
+}
+.home {
+  height: 80vh;
+}
+.newUserPage {
+  height: 80vh;
+}
   }
