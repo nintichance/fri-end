@@ -1,39 +1,101 @@
-body {
+/* Layout Set Up: Fixed Header & Footer */
+
+html {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: ghostwhite;
-  margin: 0;
+  height: 100%
+}
+body {
+  height: 100%;
   width: 100vw;
-  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-h1{
   margin: 0;
-}
-header{
   display: flex;
   flex-direction: column;
+  align-items: center;
+
 }
+
+/* Header & Footer Styling: Layout Set Up: Fixed Header & Footer  */
+
+.fixed-header, .fixed-footer{
+  width: 100vw;
+  position: fixed;        
+  color: rgb(0, 0, 0);
+}
+
+.fixed-header{
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background:rgb(255, 255, 255);
+  box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
+  height: 15vh;
+}
+h1 {
+  margin: 0;
+}
+.fixed-footer{
+  bottom: 0;
+  height: 10vh;
+}
+
+nav a, a{
+  color: rgba(2, 0, 3, 0.336);
+  text-decoration: none;
+}
+
+
+.fixed-footer > img {
+  height: 50px;
+  width: 50px;
+}
+
+/* Home/Landing Page Main CSS */
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   font-size: 2em;
-  width: 100%;
+  width: 100vw;
+  margin: 300px;
+}
+.homeBody {
+  display: grid;
+  justify-content: center;
 }
 
-a {
-  color: #010100;
-  text-decoration: none;
+.homeBody > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 900px;
+  width: 100vw;
+  background-position: fixed;
+} 
+
+.first {
+  background-color: rgba(100, 100, 100, 0.49)
 }
+
+.second { 
+  background-color: black
+}
+.third {
+  background-color: white;
+}
+
+
+/* New User CSS */
+
+
 .newUserPage {
   display: flex;
   flex-direction: column;
-  height: 76vh;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .defaultImg{
@@ -41,12 +103,23 @@ a {
   height: 150px;
   width: 150px;
 }
+
+.newUser, .userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userInfo {
+  font-size: 1em;
+  }
+
 .newUserFormBody {
   display: flex; 
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
+
 form {
   height: 100%;
   width: 100%;
@@ -66,92 +139,61 @@ display: flex;
 justify-content: space-between;
 width: 100%;
 }
+
 input{
 padding: 4px;
 border-radius: 4px;
 }
-.userInfo {
-font-size: 1em;
-}
+
 .bottom-buttons {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
+} 
+
+/* Users Index CSS */
+
+
 .usersIndex {
   width: 100vw;
-
+  margin-top: 100px;
+  margin-left: 5px;
 }
+
 .usersDisplay {
   width: 100%;
   display: grid;
-  margin: 10px;
+  margin-left: 5px;
+  margin-bottom: 100px;
 }
-.usersPageNavigation{
-  margin: 10px;
+.usersPageNavigation {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-}
-.newUserFormBody{
-  height: 76vh;
-}
-.home {
-  height: 76vh;
-}
-header, footer {
-  background-color: black;
-  color: white;
-  height: 12vh;
-  width: 100vw;
-}
+  margin-left: 5px;
+} 
 
-header > h1 {
-  color: white;
-}
+/* Images */
 
-.navigation > a {
-  color: white;
-}
-.homeBody > div {
-  display: flex;
-  justify-content: center;
-}
-.personPage{
-  width: 100vw;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-}
-/* .personBody{
-  width:100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 img {
   width: 95%;
   height: 80%;
+  border-radius: 100%;
 }
 
+/* For Bigger Screens */
+
 @media only screen and (min-width: 643px) {
-  header{
-    flex-direction: row;
-    justify-content: space-between;
+
+  /* Header & Footer  */
+  .fixed-header{
+    height: 10vh;
   }
-  .navigation {
-    display: flex;
-    align-items: flex-end;
+  .fixed-footer {
+    height: 10vh;
   }
-  h1 {
-    display:flex;
-    align-items: flex-end;
-  }
-  .home {
-    font-size: 4em;
-  }
+
+  /* New User Page */
   .newUserFormBody{
     flex-direction: row;
     justify-content: space-between;
@@ -160,7 +202,6 @@ img {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-   
   }
   .form {
     margin-left: 20px;
@@ -168,20 +209,14 @@ img {
   .newUser {
     margin-right: 20px;
   }
- .usersDisplay {
-   grid-template-rows: repeat(3, 1fr);
-   grid-template-columns: repeat(3, 1fr)
- }
- header, footer {
-  height: 10vh;
-}
-.personPage{
-  height: 80vh;
-}
-.home {
-  height: 80vh;
-}
-.newUserPage {
-  height: 80vh;
-}
+  .usersDisplay {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr)
   }
+}
+
+/* User Show Page */
+
+.personPage {
+  margin: 100px 0;
+}
