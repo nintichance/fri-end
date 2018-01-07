@@ -6,27 +6,24 @@
         </div>
         <div class="form">
             <div class="userInfo">
-                <h2> enter connection info:</h2>
+                <h2> enter new effect:</h2>
             </div>
-            <form action="/users/{{../../userId}}/effects/{{../effectId}}" method="POST">
+            <form action="/users/{{userId}}/effects/{{effect._id}}/connections" method="POST">
                 <div class="form-input">
                     <label for="connection">connection:</label>
-                    <input type="text" name="connection"/>
+                    <input type="text" name="connection">
                 </div>
                 <div class="form-input">
                     <label for="endedWell">did it end well?:</label>
-                    <input type="text" name="endedWell"/>
+                    <input type="text" name="endedWell">
                 </div>
                 <div class="form-input">
-                    <label for="over">is it over?:</label>
-                    <input type="text" name="over"/>
+                    <label for="over">over:</label>
+                    <input type="text" name="over">
                 </div>
                 <div class="bottom-buttons">
                     <input class="button primary" type="submit" value="create connection">
-                    <a href="/users/{{../../userId}}/effects/{{../effectId}}" class="button warning">cancel</a>
-                    <a href="/users">home</a>
+                    <a href="/users/{{userId}}/effects/{{effect._id}}" class="button warning">cancel</a>
                 </div>
             </form>
         </div>
-    </div>
-</div>

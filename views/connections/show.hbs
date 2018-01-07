@@ -1,18 +1,18 @@
 <div class="personPage">
     <div class="personHeader">
-            <h2>{{username}}'s effect</h2>
-            <a href="/users">other users</a>
-            <a class="stores" href="/users/{{userId}}/effects/new">new effect</a>
-            <a href="/users/{{userId}}/effects">{{username}}'s effects</a>
-            <a href="/users/{{userId}}/effects/{{effect._id}}/connections/new">new connection</a>
-            <a href="/users/{{userId}}/effects/{{effect._id}}/connections">view connection</a>
-        </div>
+        <h2>{{username}}'s connection</h2>
+        <a href="/users">other users</a>
+        <a class="effects" href="/users/{{userId}}/effects/new">new effect</a>
+        <a href="/users/{{userId}}/effects">{{username}}'s effects</a>
+        <a href="/users/{{userId}}/effects/{{effect._id}}/connections/new">new connection</a>
+        <a href="/users/{{userId}}/effects/{{effect._id}}/connections">view connection</a>
+    </div>
     <div class="personBody">
         <div class="personInfo">
-            <img src="{{effect.img}}" alt="Picture of {{username}}">
-            <p>{{effect.description}}</p>
-            <a href="/users/{{userId}}/effects">back to effects</a>
-           <a href="/users/{{userId}}/effects/{{effect._id}}/delete">delete effect</a>
-        </div>
+        <img src="https://placehold.it/256/256" alt="placeholder">
+    </div>
+    <div class="user-info">
+        <p>Given to {{username}} by their {{connection.connection}}</p>
+        <a class="button warning" href="/users/{{userId}}/effects/{{effect._id}}/connections/{{connection._id}}/delete">delete connection</a>
     </div>
 </div>

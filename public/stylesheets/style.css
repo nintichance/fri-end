@@ -15,12 +15,24 @@ body {
 
 }
 
+/* Error */
+
+.error {
+  margin-top: 100px;
+}
+
 /* Header & Footer Styling: Layout Set Up: Fixed Header & Footer  */
 
 .fixed-header, .fixed-footer{
   width: 100vw;
   position: fixed;        
   color: rgb(0, 0, 0);
+}
+
+.fixed-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .fixed-header{
@@ -46,7 +58,7 @@ nav a, a{
 }
 
 
-.fixed-footer > img {
+.image > img {
   height: 50px;
   width: 50px;
 }
