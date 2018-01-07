@@ -62,6 +62,27 @@ router.get('/:connectionId', (req, res) => {
 })
 
 
+router.get('/:connectionId/delete', (req, res) => {
+    const userId = req.params.userId
+    const effectId = req.params.effectId
+    const connectionId = req.params.connectionId
+
+    User.findById(userId)
+        .then((user) => {
+            const effect = user.effects.id(effectId)
+            effect.connections.id(connectionId).remove()
+
+            return user.save()
+        })
+        .then(() => {
+            res.redirect(`/users/${userId}/effects/${effectId}`)
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+})
+
+
 
 
 
