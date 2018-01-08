@@ -1,17 +1,15 @@
 <div class="personPage">
     <div class="personHeader">
             <h2>{{user.name}}'s page</h2>
-            <a href="/users">other users</a>
-            <a class="stores" href="/users/{{user._id}}/effects/new">new effect</a>
-            <a href="/users/{{user._id}}/effects">{{user.username}}'s effects</a>
+            <a class="stores" href="/users/{{user._id}}/effects/new">new effect |</a>
             <a class="connections" href="/users/{{user._id}}/effects/{{effect._id}}/connections">{{user.username}}'s connections</a>
         </div>
     <div class="personBody">
         <div class="personInfo">
             <img src="{{user.img}}" alt="Picture of {{user.name}}">
             <p>{{user.description}}</p>
-            <a class="delete" href="/users/{{user._id}}/delete">delete user</a>
-            <a class="update" href="/users/{{user._id}}/edit">edit user</a>
+            <a class="delete" href="/users/{{user._id}}/delete">delete user |</a>
+            <a class="update" href="/users/{{user._id}}/edit">edit user |</a>
             <a href="/users/{{user.id}}/effects">view effects</a>
            
         </div>

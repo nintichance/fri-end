@@ -72,7 +72,8 @@ router.get('/:userId/edit', (req, res)=>{
   User.findById(userId)
   .then((user)=>{
     res.render('users/edit', {
-      user
+      user,
+      title: 'edit user'
     })
   })
 })

@@ -2,7 +2,9 @@
 
 **Use the App [here](https://fri-end.herokuapp.com/)**
 
-**Developer**: Ninti Chance
+**App Developer**: Ninti Chance, Developer since October, General Assembly Student, Theatre and Performance Enthusiast
+
+**App Overview**
 
 It's weird how the things that we once cherished could haunt us upon later review. A necklace an ex gave you. A book that your late grandmother imparted to you. Or even a collection of VHS's that remind you of your childhood. Sometimes holding onto these things ameliorate the end and sometimes, it just exasperates you. Cartharsis is important. It's release. It's letting go. This app lets you tell the story of the things you're hoarding, while also letting you healthily distance yourself from them. Don't hoard in your closet, document it online. Who knows, maybe someone will relate to your story.
 
@@ -22,16 +24,29 @@ It's weird how the things that we once cherished could haunt us upon later revie
 
 [Trello User Stories](https://trello.com/b/gTRBZMog/frend)
 [ERD](https://www.figma.com/file/a4W88rVGZ71PVvANqRQOSPfq/fr!end-app-ERD)
-[Wireframes]
+[Wireframes](https://www.figma.com/file/bT131n3IUVRdWtxGFBrkORUY/fr!end-app-Wireframes?node-id=2%3A11)
 
 **Features**
 
+This app allows a user to view other user's experiences and delve into the mind of a person a little too attached or too emotionally affected by things of their past. It gives those people a place to find kindred souls, but also to clear their minds.
+
+
 **Unsolved Problems**
+
+* I would like for the user to be able to upload any image sized and also upload an image from their computer.
+* I would like for the user to see their descriptions in a drop-down of some sort so to not change the structure of the page.
+* I would like for the user to be able to exchange items with other users.
+* I would like for the user to be able to comment and interact with other user's posts and profiles.
+* I would like for the boolean type data to create icons on each image that fir the meaning of the boolean type.
+* Responsiveness works on browser, but fails to transfer to a phone screen.
+* Edit routes for nested objects are undone
 
 **What I learned**
 
 The most important thing that I learned during this project is to confidently find the story that you want to tell will your app and let your process support as you progress. I think it is integral for every step of the process, from the planning stages to deployment to find and focus on a clear through-line. In future projects, conceptually, I will spend more time asking, "what is the overall goal" and only use small goals to facilitate the larger picture.
 
+I, of course, also learned to naviate CRUD functionality using node.js, express, mongodb, and mongoose. I would love to delve deeper into the available methods of the two mentioned modules so that I can solve more problems and build bigger, more complex apps.
+
 **Version 2**
 
-Version 2 will allow other users to comment on or react to your profile's effects. 
+Version 2 will allow other users to comment on or react to your profile's effects. We will also introduce a feature where users can request items back or virtually destroy unwanted items.
