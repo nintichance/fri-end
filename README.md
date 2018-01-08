@@ -53,6 +53,15 @@ I, of course, also learned to naviate CRUD functionality using node.js, express,
 
 Version 2 will allow other users to comment on or react to your profile's effects. We will also introduce a feature where users can request items back or virtually destroy unwanted items.
 
+**Improvements from Project One**
+* Focused on meeting MVP requirements before pursuing REACH goals, which improved time and project management skills
+* Payed more attention to responsiveness and mobile first design
+* Appreciated the process instead of downplaying my achievements
+* Branched, but would still like to augment branching skills
+* Wrote DRY-er, more readible and more organized code
+* Focused on one task at a time
+* Worked alongside another programmer, which increased motivation
+
 **My Proudest Moment**
 
 Using CSS is like training a wild beast. It brings me great joy that the pain I enured misplacing a semi colon or accidentally deleting a class name paid off in the form of something I'm always going to look at and say, "hmmm... needs more styling"

@@ -3,7 +3,7 @@ const router = express.Router({ mergeParams: true })
 
 const User = require('../db/models/User')
 
-
+// GET (Read) New Connection
 router.get('/new', (req, res) => {
     const userId = req.params.userId
     const effectId = req.params.effectId
@@ -20,6 +20,7 @@ router.get('/new', (req, res) => {
         })
 })
 
+//POST (Create) New Connection
 router.post('/', (req, res) => {
     const userId = req.params.userId
     const effectId = req.params.effectId
@@ -38,6 +39,7 @@ router.post('/', (req, res) => {
         })
 })
 
+//GET (Read) Connection
 router.get('/:connectionId', (req, res) => {
     const userId = req.params.userId
     const effectId = req.params.effectId
@@ -61,7 +63,7 @@ router.get('/:connectionId', (req, res) => {
         })
 })
 
-
+//DELETE (Delete) Connection
 router.get('/:connectionId/delete', (req, res) => {
     const userId = req.params.userId
     const effectId = req.params.effectId
