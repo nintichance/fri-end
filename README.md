@@ -19,12 +19,13 @@ It's weird how the things that we once cherished could haunt us upon later revie
 * [Flaticon](https://www.flaticon.com/): customizable icons galore!
 * [Tutorial Republic](https://www.tutorialrepublic.com/faq/how-to-create-fixed-header-or-footer-using-css.php): helped this developer better create a fixed header and footer.
 * [Background Image](https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?auto=format&fit=crop&w=750&q=80)
+* [Bulma](https://bulma.io/documentation/elements/button/): Library of pre-styled buttons
 
 **The Planning Stages**
 
-[Trello User Stories](https://trello.com/b/gTRBZMog/frend)
-[ERD](https://www.figma.com/file/a4W88rVGZ71PVvANqRQOSPfq/fr!end-app-ERD)
-[Wireframes](https://www.figma.com/file/bT131n3IUVRdWtxGFBrkORUY/fr!end-app-Wireframes?node-id=2%3A11)
+* [Trello User Stories](https://trello.com/b/gTRBZMog/frend)
+* [ERD](https://www.figma.com/file/a4W88rVGZ71PVvANqRQOSPfq/fr!end-app-ERD)
+* [Wireframes](https://www.figma.com/file/bT131n3IUVRdWtxGFBrkORUY/fr!end-app-Wireframes?node-id=2%3A11)
 
 **Features**
 
