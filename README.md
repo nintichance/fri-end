@@ -61,6 +61,7 @@ Version 2 will allow other users to comment on or react to your profile's effect
 * Wrote DRY-er, more readible and more organized code
 * Focused on one task at a time
 * Worked alongside another programmer, which increased motivation
+* Debugging both JS and CSS is better figured out!
 
 **My Proudest Moment**
 
