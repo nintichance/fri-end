@@ -4,7 +4,7 @@
             {{#each effects}}
             <div>
                 <div class="effectImg">
-                    <img src="{{this.img}}" alt="Picture of Effect">
+                    <img class="sizeBig" src="{{this.img}}" alt="Picture of Effect">
                 </div>
                 <div class="effectDescription">
                     <p>{{this.description}}</p>
@@ -15,11 +15,10 @@
                     <p>do i want this?: {{this.want}}</p>
                     <p>do i not want this?: {{dontWant}}</p>
                 </div>
-                <div class="effectLinks">
-                    <a href="/users/{{this._id}}">{{../username}}'s account</a>
-                    <a href="/users/{{../userId}}/effects/{{this._id}}/connections">{{username}}'s account</a>
-                    <a href="/users/{{../userId}}/effects/new">new effect</a>
-                    <a href="/users/{{../userId}}/effects/{{this._id}}">view effect</a>
+                <div class="bottom-buttons">
+                    <a class="effectButton" href="/users/{{../userId}}">{{../username}}</a>
+                    <a class="effectButton" href="/users/{{../userId}}/effects/new">new effect</a>
+                    <a class="effectButton" href="/users/{{../userId}}/effects/{{this._id}}">view effect</a>
                 </div>
             </div>
             {{/each}}

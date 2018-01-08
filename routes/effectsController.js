@@ -41,7 +41,7 @@ router.get('/:effectId', (req, res) => {
           userId,
           effect,
           username: user.username,
-          pageTitle: 'effects'
+          title: 'effects'
         })
       })
       .catch((error) => {

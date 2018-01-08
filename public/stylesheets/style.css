@@ -46,6 +46,12 @@ body {
 h1 {
   margin: 0;
   font-family: 'Fredericka the Great', cursive;
+  font-size: 3em;
+}
+h2{
+  margin-left: 10px;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2em;
 }
 .fixed-footer{
   bottom: 0;
@@ -56,12 +62,8 @@ nav a, a{
   color: rgba(2, 0, 3, 0.336);
   text-decoration: none;
 }
-
-
-a > img {
-  height: 50px;
-  width: 50px;
-  border-radius: 0;
+.image {
+  display: flex;
 }
 
 /* Home/Landing Page Main CSS */
@@ -91,6 +93,13 @@ a > img {
 .zeroth{
   background: linear-gradient(to right, rgb(0, 204, 255) , rgb(0, 119, 255));
 }
+.zeroth > h1:hover{
+  color: white;
+}
+.zeroth > a {
+  color: white;
+}
+
 .first {
   background: url("https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?auto=format&fit=crop&w=750&q=80");
   background-position: fixed;
@@ -104,11 +113,10 @@ a > img {
   background-position: fixed;
 }
 .second > p {
-  color:rgba(255, 255, 255, 0.11);
+  color:white;
+  margin-left: 10px;
 }
-.second > p:hover{
-  color: white;
-}
+
 
 
 /* New User CSS */
@@ -173,10 +181,27 @@ border-radius: 4px;
 .bottom-buttons {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 75%;
+  margin-top: 10px;
 } 
+.button.is-primary.is-outlined {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #00d1b2;
+  color: #00d1b2;
+  padding: 4px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
+  background-color: #00d1b2;
+  border-color: #00d1b2;
+  color: #fff;
+}
 
-/* Users Index CSS */
+/* Users & Effects Index CSS */
 
 
 .usersIndex {
@@ -187,7 +212,6 @@ border-radius: 4px;
 
 .usersDisplay {
   width: 100%;
-  display: flex;
   margin-left: 5px;
   margin-bottom: 100px;
 }
@@ -197,10 +221,48 @@ border-radius: 4px;
   align-items: flex-end;
   margin-left: 5px;
 } 
+.userButton {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #00d1b2;
+  color: #00d1b2;
+  padding: 4px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  border-color: #00d1b2;
+  color:#00d1b2;
+}
+.userButton:hover {
+background-color: #00d1b2;
+border-color: #00d1b2;
+color: #fff;
+}
+
+.effectButton {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #00d1b2;
+  color: #00d1b2;
+  padding: 4px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-color: #00d1b2;
+  color:#00d1b2;
+}
+.effectButton:hover {
+background-color: #00d1b2;
+border-color: #00d1b2;
+color: #fff;
+}
+
 
 /* Images */
 
-img {
+.sizeBig {
   width: 95%;
   height: 80%;
   border-radius: 100%;
@@ -216,6 +278,12 @@ img {
   }
   .fixed-footer {
     height: 10vh;
+  }
+
+/* Home */
+  .second > p {
+    color:white;
+    margin-left: 20px;
   }
 
   /* New User Page */
@@ -237,12 +305,34 @@ img {
   .usersDisplay {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
   }
 }
+
+/* .image {
+  width: 20%;
+  justify-content: space-around;
+} */
 
 /* User Show Page */
 
 .personPage {
   margin: 100px 0;
+}
+
+@media only screen and (max-width: 643px) {
+  .second > p {
+    color:white;
+    font-size: 18px;
+  }
+  .bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  } 
+  .effectButton {
+    width: 50%;
+  }
 }

@@ -3,9 +3,9 @@
         <div class="usersDisplay">
             {{#each users}}
             <div>
-                <img src="{{this.img}}" alt="Picture of {{this.name}}">
+                <img class="sizeBig" src="{{this.img}}" alt="Picture of {{this.name}}">
                 <p>{{this.description}}</p>
-                <a href="/users/{{this._id}}">{{username}}'s account</a>
+                <a class="userButton" href="/users/{{this._id}}">{{username}}'s account</a>
             </div>
             {{/each}}
         </div>

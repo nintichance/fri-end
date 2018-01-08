@@ -48,7 +48,8 @@ router.get('/:userId', (req, res)=>{
   User.findById(userId)
     .then((user)=>{
       res.render('users/show', {
-        user
+        user,
+        title: "user"
       })
     })
     .catch((err)=>{
