@@ -51,3 +51,13 @@ I, of course, also learned to naviate CRUD functionality using node.js, express,
 **Version 2**
 
 Version 2 will allow other users to comment on or react to your profile's effects. We will also introduce a feature where users can request items back or virtually destroy unwanted items.
+
+**My Proudest Moment**
+
+Using CSS is like training a wild beast. It brings me great joy that the pain I enured misplacing a semi colon or accidentally deleting a class name paid off in the form of something I'm always going to look at and say, "hmmm... needs more styling"
+
+I am also happy that I wrote out some of the routes myself and completed pretty do-able and good looking wireframes. 
+
+**My Weakest Moment**
+
+Neglecting to devote more time to the planning stages.
