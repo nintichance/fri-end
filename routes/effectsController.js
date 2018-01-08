@@ -76,7 +76,7 @@ router.get('/:effectId', (req, res) => {
                 return user.save()
             })
             .then(()=>{
-                res.redirect(`/users/${userId}/effects`)
+                res.redirect(`/users/${userId}`)
             })
             .catch((err)=>{
                 console.log(err)
