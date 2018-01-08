@@ -93,6 +93,9 @@ nav a, a{
 .zeroth{
   background: linear-gradient(to right, rgb(0, 204, 255) , rgb(0, 119, 255));
 }
+.zeroth > h1, h2 {
+  color: black;
+}
 .zeroth > h1:hover{
   color: white;
 }
