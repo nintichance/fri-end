@@ -70,7 +70,7 @@ a > img {
   align-items: center;
   font-size: 2em;
   width: 100vw;
-  margin: 300px;
+  margin: 0px;
 }
 .homeBody {
   display: grid;
@@ -78,23 +78,30 @@ a > img {
 }
 
 .homeBody > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 900px;
-  width: 100vw;
-  background-position: fixed;
+  height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
 } 
 
 .first {
-  background-color: rgba(100, 100, 100, 0.49)
+  background: url("https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?auto=format&fit=crop&w=750&q=80");
+  background-position: fixed;
 }
 
 .second { 
-  background-color: black
+  background-color: rgba(0, 0, 0, 0.938)
 }
 .third {
-  background-color: white;
+  background: url("https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?auto=format&fit=crop&w=750&q=80");
+  background-position: fixed;
+}
+.second > p {
+  color:white;
 }
 
 
@@ -170,19 +177,16 @@ border-radius: 4px;
   width: 100vw;
   margin-top: 100px;
   margin-left: 5px;
-  display: flex;
 }
 
 .usersDisplay {
   width: 100%;
   display: flex;
-  flex-direction: column;
   margin-left: 5px;
   margin-bottom: 100px;
 }
 .usersPageNavigation {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   margin-left: 5px;
