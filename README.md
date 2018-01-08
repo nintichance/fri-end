@@ -39,7 +39,8 @@ This app allows a user to view other user's experiences and delve into the mind 
 * I would like for the user to be able to comment and interact with other user's posts and profiles.
 * I would like for the boolean type data to create icons on each image that fir the meaning of the boolean type.
 * Responsiveness works on browser, but fails to transfer to a phone screen.
-* Edit routes for nested objects are undone
+* Edit routes for nested objects are undone.
+* When a user hits a collection page with no items in it, a message displays, saying "they do not have 'x'".
 
 **What I learned**
 
