@@ -328,6 +328,8 @@ p {
   margin: 100px 0;
 }
 
+/* Some CSS responsiveness things that needed to be tended to */
+
 @media only screen and (max-width: 643px) {
   .second > p {
     color:white;
@@ -343,3 +345,79 @@ p {
     width: 50%;
   }
 }
+
+/* Needed to fix responsiveness bug for edit and create pages */
+
+@media only screen and (max-width: 250px){
+  body{
+    width: 100vw;
+    height: 200vh;
+  }
+  .newUserPage {
+    height: 200vh;
+   
+  }
+  
+  .defaultImg{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .userInfo {
+    font-size: 1em;
+    }
+  
+  
+  form {
+    height: 75%;
+    width: 75%;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  }
+  
+  input{
+
+  border-radius: 4px;
+  }
+  
+  .bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  } 
+  .button.is-primary.is-outlined {
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #00d1b2;
+    color: #00d1b2;
+    padding: 4px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
+    background-color: #00d1b2;
+    border-color: #00d1b2;
+    color: #fff;
+  }
+  .personPage {
+    height: 200vh;
+  }
+}
+
