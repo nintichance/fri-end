@@ -128,16 +128,17 @@ nav a, a{
 .newUserPage {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
+  margin: 100px 0px;
 }
 
 .defaultImg{
   border-radius: 100%;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .newUser, .userInfo {
@@ -146,7 +147,7 @@ nav a, a{
   align-items: center;
 }
 .userInfo {
-  font-size: 1em;
+  font-size: .75em;
   }
 
 .newUserFormBody {
@@ -159,7 +160,7 @@ nav a, a{
 form {
   height: 100%;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -428,7 +429,6 @@ p {
   }
   .newUserPage {
     height: 200vh;
-   
   }
   
   .defaultImg{
