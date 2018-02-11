@@ -326,7 +326,9 @@ p {
 /* User Show Page */
 
 .personPage {
-  margin: 100px 0;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  height: 300vh;
 }
 
 /* Some CSS responsiveness things that needed to be tended to */
