@@ -417,9 +417,7 @@ p {
     border-color: #00d1b2;
     color: #fff;
   }
-  .personPage {
-    height: 200vh;
-  }
+ 
 }
 
 @media only screen and (max-height: 380px){
