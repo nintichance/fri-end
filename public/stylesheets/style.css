@@ -100,9 +100,17 @@ nav a, a{
   color: white;
 }
 .zeroth > a {
+  color: black;
+  font-family: 'Fredericka the Great', cursive;
+}
+.zeroth > a:hover {
   color: white;
 }
-
+.zeroth > p {
+  color: black;
+  font-size: 36px;
+  font-family: 'Fredericka the Great', cursive;
+}
 .first {
   background: url("https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?auto=format&fit=crop&w=750&q=80");
   background-position: fixed;
@@ -112,7 +120,7 @@ nav a, a{
   background: linear-gradient(to right, rgb(0, 204, 255) , rgb(0, 119, 255));
 }
 .third {
-  background: url("https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?auto=format&fit=crop&w=750&q=80");
+  background: url("https://images.unsplash.com/photo-1484848016494-33ad4fc7feef?ixlib=rb-0.3.5&s=94bcb91194c02735a340b25c485092f7&auto=format&fit=crop&w=1350&q=80");
   background-position: fixed;
 }
 .second > p {
