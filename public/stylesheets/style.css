@@ -366,7 +366,7 @@ p {
 @media only screen and (max-width: 643px) {
   .second > p {
     color:white;
-    font-size: 18px;
+    font-size: 28px;
   }
   .bottom-buttons {
     display: flex;
